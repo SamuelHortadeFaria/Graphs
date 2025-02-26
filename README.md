@@ -1,4 +1,3 @@
-```markdown
 # Trabalho de Grafos
 
 Este repositório contém o código para o trabalho de grafos, desenvolvido como parte da disciplina de Algoritmos e Estruturas de Dados.
@@ -28,6 +27,6 @@ A estrutura de pastas do projeto é a seguinte:
 ## Descrição do Projeto
 
 Este projeto é uma implementação de grafos, abordando as estruturas e algoritmos relacionados. O código em `main.cpp` orquestra o funcionamento das estruturas de dados, enquanto as pastas dentro de `assets/` organizam os componentes do grafo.
-```
+
 # O GRUPO
-<img src='./assets/img/IMG_20250226_095840132_HDR.jpg' style='width: 1000px; height: 700px;'>
+<img src='./assets/img/IMG_20250226_095840132_HDR.jpg' style='width: 3000px; height: 500px;'>
