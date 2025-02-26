@@ -15,16 +15,18 @@ O professor responsável por esta disciplina é Silvio Jamil Ferzoli.
 
 A estrutura de pastas do projeto é a seguinte:
 
-```
-.
-├── main.cpp               # Arquivo principal do programa
-├── assets/
-│   ├── Lista/             # Contém os arquivos relacionados à implementação da lista
-│   ├── No/                # Contém os arquivos relacionados aos nós
-│   ├── Grafo/             # Contém os arquivos relacionados ao grafo
-│   └── img/               # Imagens utilizadas no projeto
-```
+
+## Estrutura de Pastas
+
+- `main.cpp`: Arquivo principal contendo a execução do programa.
+- `assets/`: Diretório contendo todos os arquivos auxiliares.
+  - `assets/Lista/`: Contém a implementação das listas.
+  - `assets/No/`: Contém a implementação dos nós.
+  - `assets/Grafo/`: Contém a implementação do grafo.
+
 
 ## Descrição do Projeto
+
 Este projeto é uma implementação de grafos, abordando as estruturas e algoritmos relacionados. O código em `main.cpp` orquestra o funcionamento das estruturas de dados, enquanto as pastas dentro de `assets/` organizam os componentes do grafo.
-```
+
+<img src='./assets/img/IMG_20250226_095840132_HDR.jpg' style='width: 1000px; height: 700px;'>
