@@ -29,4 +29,5 @@ A estrutura de pastas do projeto é a seguinte:
 
 Este projeto é uma implementação de grafos, abordando as estruturas e algoritmos relacionados. O código em `main.cpp` orquestra o funcionamento das estruturas de dados, enquanto as pastas dentro de `assets/` organizam os componentes do grafo.
 
+# O GRUPO
 <img src='./assets/img/IMG_20250226_095840132_HDR.jpg' style='width: 1000px; height: 700px;'>
