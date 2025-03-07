@@ -4,7 +4,7 @@ Este repositório contém o código para o trabalho de grafos, desenvolvido como
 
 ## Integrantes
 - Kaiky França da Silva [Linkedin](https://www.linkedin.com/in/glkaiky/) | [Portifólio](kaikyfrs.com.br)
-- 
+- Samuel Horta de Faria [Linkedin](www.linkedin.com/in/samuelhortafaria)
 - 
 
 ## Professor
