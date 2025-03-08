@@ -1,0 +1,91 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}  % Codificação UTF-8
+\usepackage[T1]{fontenc}     % Suporte a caracteres especiais
+\usepackage[brazil]{babel}   % Idioma português
+\usepackage{geometry}        % Ajuste de margens
+\geometry{a4paper, top=3cm, bottom=2cm, left=3cm, right=2cm}
+\usepackage{setspace}        % Controle de espaçamento
+\setstretch{1.5}             % Espaçamento 1,5
+\usepackage{titlesec}        % Personalização de títulos
+\usepackage{graphicx}        % Inclusão de imagens
+\usepackage{hyperref}        % Hiperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    pdftitle={Trabalho Prático 1 - Teoria dos Grafos},
+}
+
+%--| Personalização dos títulos |--
+\titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
+
+%----------| Início do documento |----------
+\begin{document}
+
+%-----| CAPA |------
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \textbf{\large PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS}\\
+    
+    \vspace*{0.5cm}
+    \textbf{\large CIÊNCIA DA COMPUTAÇÃO}\\
+    
+    \vspace*{4cm}
+    \textbf{\large TRABALHO 1}\\
+    
+    \vspace*{0.5cm}
+    \textit{\large Teoria de Grafos e Computabilidade}\\
+    
+    \vfill
+    \textbf{\large Gabriel Cunha Schlegel \\ Kaiky França da Silva \\ Samuel Horta de Faria}\\
+    
+    \vspace*{1.5cm}
+    \textbf{\large Belo Horizonte}\\
+    \vspace*{0.5cm}
+    \textbf{\large Março de 2024}
+\end{titlepage}
+
+%--| SUMÁRIO |--
+\tableofcontents
+\newpage
+
+%--| INTRODUÇÃO |--
+\section{Introdução}
+
+Este trabalho apresenta uma análise comparativa entre dois algoritmos para detecção de ciclos em um grafo: \textbf{Busca em Profundidade} (DFS) e \textbf{Permutação}. Ambos foram implementados utilizando listas de adjacência \textbf{(vector<vector<int>>)} para representar o grafo, já que possui uma maior eficiência em termos de tempo de acesso e uso de memória, comparada a representação porr meio de matriz de adjacência.  
+
+\newpage
+
+%--| METODOLOGIA |--
+\section{Metodologia}
+
+\subsection{Busca em Profundidade (DFS)}
+O algoritmo de DFS percorre o grafo explorando caminhos e armazenando os vértices visitados. Caso retorne a um vértice já visitado e o ciclo tenha pelo menos três nós, ele é identificado. Para evitar contagem duplicada, foi utilizado um conjunto \textbf{(set<vector<int>>)} para armazenar apenas ciclos únicos.  
+
+\subsection{Permutação}
+O método de permutação gera todas as possíveis sequências de vértices e verifica quais delas formam ciclos válidos. Embora garanta a identificação de todos os ciclos, esse método possui um custo computacional \textbf{extremamente alto}.
+
+\newpage
+
+%--| ANÁLISE COMPARATIVA |--
+\section{Análise Comparativa}
+
+A principal diferença entre os métodos está no desempenho conforme o tamanho do grafo aumenta:
+
+\begin{itemize}
+    \item \textbf{DFS}: mais rápido e eficiente para grafos pequenos, mas pode consumir muita memória devido às chamadas recursivas em grafos grandes.
+    \item \textbf{Permutação}: extremamente preciso, porém inviável para grafos grandes, pois seu tempo de execução cresce de forma significativa.
+\end{itemize}
+
+\newpage
+
+%--| CONCLUSÃO |--
+\section{Conclusão}
+
+O algoritmo de \textbf{DFS} demonstrou ser a melhor opção para detecção de ciclos, pois mantém um bom equilíbrio entre eficiência e uso de memória. O método de permutação, apesar de garantir a exatidão na identificação de ciclos, é inviável para grafos grandes devido ao seu crescimento fatorial.
+
+A escolha da lista de adjacência como estrutura de representação do grafo proporcionou um melhor desempenho, evitando custos excessivos de armazenamento.
+
+\end{document}
